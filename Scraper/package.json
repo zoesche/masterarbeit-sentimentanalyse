@@ -1,0 +1,24 @@
+{
+  "name": "Scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bewertungen-scrapen-booking": "npx playwright test --project=chromium booking-scraper.spec.ts",
+    "bewertungen-scrapen-booking:ui": "npx playwright test --project=chromium --ui booking-scraper.spec.ts",
+    "bewertungen-scrapen-holidaycheck": "npx ts-node tests/holidaycheck-scraper.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.6"
+  },
+  "dependencies": {
+    "node-xlsx": "^0.23.0",
+    "json-as-xlsx": "2.5.4",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
